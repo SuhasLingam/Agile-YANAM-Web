@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins"],
       },
+      backgroundImage: {
+        homeBg: "url('./assets/wave.svg')",
+      },
     },
   },
   plugins: [],

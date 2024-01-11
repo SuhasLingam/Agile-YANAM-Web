@@ -4,7 +4,7 @@ import HomeBanner from "./components/home/homeBanner";
 function App() {
   return (
     <>
-      <div className="bg-[#fff]">
+      <div className="h-screen w-full bg-homeBg bg-bottom bg-no-repeat bg-cover">
         <Navbar />
         <HomeBanner />
       </div>
