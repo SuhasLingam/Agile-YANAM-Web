@@ -8,6 +8,7 @@ export default {
       },
       backgroundImage: {
         homeBg: "url('./assets/wave.svg')",
+        homeBgMob: "url('./assets/wave-mob.svg')",
       },
     },
   },
