@@ -4,24 +4,24 @@ import { FaArrowRight } from "react-icons/fa";
 const homeBanner = () => {
   return (
     <div>
-      <div className="flex-col w-full h-full mt-[120px] space-y-[100px] font-[700] flex items-center font-poppins ">
+      <div className="flex-col w-full h-full mt-[160px] md:mt-[120px] space-y-[80px] md:space-y-[100px] font-[700] flex items-center font-poppins ">
         {/** Header */}
         <div>
-          <p className="flex justify-center text-justify items-center text-5xl">
+          <p className="flex justify-center text-justify items-center text-2xl md:text-5xl">
             Crafting Your Digital Destiny with
           </p>
-          <p className="flex justify-center text-justify items-center text-5xl">
+          <p className="flex justify-center text-justify items-center  text-2xl md:text-5xl">
             Personalized Tech Approaches.
           </p>
         </div>
         {/** Button */}
         <div className="flex justify-center items-center ">
-          <a className="text-white bg-black p-4 flex-row  gap-3 px-8 flex items-center justify-center rounded-3xl">
+          <a className="text-white bg-black md:p-4 p-3 flex-row md:gap-3 px-5 md:px-8 flex items-center justify-center rounded-full">
             Let's Connect <FaArrowRight />
           </a>
         </div>
         <svg
-          className="absolute bottom-0"
+          className="absolute h-fit bottom-0"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >
