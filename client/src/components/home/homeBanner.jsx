@@ -7,21 +7,21 @@ const homeBanner = () => {
       <div className="flex-col w-full h-full mt-[160px] md:mt-[120px] space-y-[80px] md:space-y-[100px] font-[700] flex items-center font-poppins ">
         {/** Header */}
         <div>
-          <p className="flex justify-center text-justify items-center text-2xl md:text-5xl">
+          <p className="md:text-5xl flex items-center justify-center text-2xl text-justify">
             Crafting Your Digital Destiny with
           </p>
-          <p className="flex justify-center text-justify items-center  text-2xl md:text-5xl">
+          <p className="md:text-5xl flex items-center justify-center text-2xl text-justify">
             Personalized Tech Approaches.
           </p>
         </div>
         {/** Button */}
-        <div className="flex justify-center items-center ">
-          <a className="text-white bg-black md:p-4 p-3 flex-row md:gap-3 px-5 md:px-8 flex items-center justify-center rounded-full">
+        <div className=" flex items-center justify-center">
+          <a className="md:p-4 md:gap-3 md:px-8 flex flex-row items-center justify-center p-3 px-5 text-white bg-black rounded-full">
             Let's Connect <FaArrowRight />
           </a>
         </div>
         <svg
-          className="absolute h-fit bottom-0"
+          className="h-fit absolute bottom-0"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >

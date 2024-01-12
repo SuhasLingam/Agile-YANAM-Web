@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*Scroll bar */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.723);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #d96f61;
+    border-radius: 14px;
+    border: 3px solid var(--primary);
+}
 
 @tailwind base;
 @tailwind components;
