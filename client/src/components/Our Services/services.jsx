@@ -21,84 +21,112 @@ const ourServices = () => {
     {
       name: "UI/UX",
       logo: <FaPenNib size={25} />,
+      DarkerColor: "#FF0000",
+      LighterColor: "#FF8E8E",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Graphic Design",
       logo: <SiMaterialdesignicons size={25} />,
+      DarkerColor: "#FF008A",
+      LighterColor: "#FF8EC4",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Video Editing",
       logo: <FaRegPlayCircle size={25} />,
+      DarkerColor: "#FF00F5",
+      LighterColor: "#FD8EFF",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Web Dev",
       logo: <FaCode size={25} />,
+      DarkerColor: "#FF8A00",
+      LighterColor: "#FFBD8E",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "App Dev",
       logo: <DiAndroid size={25} />,
+      DarkerColor: "#FFD600",
+      LighterColor: "#FFF48E",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Software Dev",
       logo: <FaMicrosoft size={25} />,
+      DarkerColor: "#EBFF00",
+      LighterColor: "#EFFF8E",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Blockchain Dev",
       logo: <FaCubes size={25} />,
+      DarkerColor: "#CCFF00",
+      LighterColor: "#DBFF8E",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "AI Chatbot",
       logo: <RiChatSmileLine size={25} />,
+      DarkerColor: "#61FF00",
+      LighterColor: "#97FF8E",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Smart Contracts",
       logo: <SiSolidity size={25} />,
+      DarkerColor: "#00FF94",
+      LighterColor: "#8EFFB4",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Digital Marketing",
       logo: <HiOutlineSpeakerphone size={25} />,
+      DarkerColor: "#00EAF9",
+      LighterColor: "#8EF8FF",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Social Media Management",
       logo: <TbPhotoCheck size={25} />,
+      DarkerColor: "#0075FF",
+      LighterColor: "#8EBBFF",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Accounting & Auditing",
       logo: <TbDeviceDesktopCheck size={25} />,
+      DarkerColor: "#8000FF",
+      LighterColor: "#9E8EFF",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Housing & Mapping",
       logo: <LiaSitemapSolid size={25} />,
+      DarkerColor: "#BA00FC",
+      LighterColor: "#D48EFF",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Interior Designing",
       logo: <TfiRulerPencil size={25} />,
+      DarkerColor: "#FFB800",
+      LighterColor: "#FFD88E",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
@@ -116,6 +144,8 @@ const ourServices = () => {
             name={items.name}
             logo={items.logo}
             text={items.content}
+            DarkerColor={items.DarkerColor}
+            LighterColor={items.LighterColor}
           />
         ))}
       </div>

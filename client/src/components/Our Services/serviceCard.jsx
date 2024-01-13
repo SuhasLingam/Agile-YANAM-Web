@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-const ServiceCard = ({ name, logo, text, color }) => {
+const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
   const [onHover, setOnHover] = useState(false);
 
   const setMouseEnter = () => {
@@ -14,7 +14,7 @@ const ServiceCard = ({ name, logo, text, color }) => {
 
   return (
     <div
-      className={`flex w-[350px] p-4 rounded-3xl h-[350px] bg-[#FFFFFF33] bg-opacity-10 overflow-hidden relative`}
+      className={`flex w-[350px] p-5 rounded-3xl h-[350px] bg-[#FFFFFF] bg-opacity-[7%] overflow-hidden relative`}
     >
       <div className="flex flex-col justify-between text-white">
         <div
@@ -32,7 +32,7 @@ const ServiceCard = ({ name, logo, text, color }) => {
                     height: "200px",
                     opacity: 1,
                     borderRadius: "50%",
-                    backgroundColor: "#FFD700",
+                    backgroundColor: `${DarkerColor}`,
                     zIndex: 2,
                   }
                 : {
@@ -45,14 +45,14 @@ const ServiceCard = ({ name, logo, text, color }) => {
             className={`absolute top-0 left-0 rounded-3xl transition-all duration-300 ease-in-out`}
           >
             {/* Display text on hover */}
-            <div className="bottom-[30px] right-[-70px] absolute text-center ">
-              <a className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-white underline cursor-pointer">
+            <div className="bottom-[20px] right-[-70px] absolute text-center ">
+              <a className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer">
                 See Projects <MdOutlineArrowOutward size={20} />
               </a>
             </div>
           </div>
 
-          {/* Inder Div color */}
+          {/* Inner Div color */}
           <div
             style={
               onHover
@@ -63,6 +63,7 @@ const ServiceCard = ({ name, logo, text, color }) => {
                     opacity: 1,
                     borderRadius: "50%",
                     zIndex: 1,
+                    backgroundColor: `${LighterColor}`,
                   }
                 : {
                     transform: "scale(0)",
@@ -72,13 +73,28 @@ const ServiceCard = ({ name, logo, text, color }) => {
                     zIndex: 1,
                   }
             }
-            className={`absolute top-0 left-0 rounded-3xl bg-yellow-500 transition-all duration-300 ease-in-out`}
+            className={`absolute top-0 left-0 rounded-3xl  transition-all duration-300 ease-in-out`}
           ></div>
 
-          <div className="z-10 flex items-center justify-center">{logo}</div>
+          <div
+            style={{
+              color: DarkerColor,
+              borderBottomColor: DarkerColor,
+            }}
+            className={`z-10 flex items-center justify-center border-b-[5px] pb-1`}
+          >
+            {logo}
+          </div>
         </div>
-        <b className="flex items-center justify-center text-5xl">{name}</b>
-        <p className={`text-justify`}>{text}</p>
+        <b className="flex items-center justify-center py-2 text-5xl">{name}</b>
+        <p
+          style={{
+            color: LighterColor,
+          }}
+          className={`text-justify`}
+        >
+          {text}
+        </p>
       </div>
     </div>
   );
