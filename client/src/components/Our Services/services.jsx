@@ -150,7 +150,7 @@ const ourServices = () => {
         ))}
       </div>
       <div className="flex items-center md:mb-[80px] mb-[40px] justify-center text-white">
-        <b className="md:text-5xl flex flex-col text-3xl">
+        <b className="md:text-5xl md:flex-row flex flex-col text-3xl">
           Looking for something else ?
           <span className=" md:pl-2 underline-offset-4 flex flex-row items-center justify-center underline cursor-pointer">
             Contact Us <MdOutlineArrowOutward />

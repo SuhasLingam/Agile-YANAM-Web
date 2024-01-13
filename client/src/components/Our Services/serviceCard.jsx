@@ -14,7 +14,7 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
 
   return (
     <div
-      className={`flex w-[350px] p-5 rounded-3xl h-[350px] bg-[#FFFFFF] bg-opacity-[7%] overflow-hidden relative`}
+      className={`flex w-[350px] border-2 p-5 rounded-3xl h-[350px] bg-[#FFFFFF] bg-opacity-[7%] overflow-hidden relative`}
     >
       <div className="flex flex-col justify-between text-white">
         <div
