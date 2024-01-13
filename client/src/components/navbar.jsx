@@ -9,7 +9,7 @@ const navbar = () => {
 
   useEffect(() => {
     const setNavColor = () => {
-      if (window.scrollY >= 1) {
+      if (window.scrollY >= 30) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -27,7 +27,9 @@ const navbar = () => {
   return (
     <div
       className={`flex fixed z-50 ${
-        scroll ? "bg-slate-500 bg-opacity-50 backdrop-blur-[8px]" : "bg-white"
+        scroll
+          ? "bg-white bg-opacity-50 backdrop-blur-[6px] transition-all delay-75 ease-in-out"
+          : "bg-white"
       } w-full top-0 font-mainFont md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
     >
       {/** Logo */}
@@ -55,7 +57,7 @@ const navbar = () => {
           }`}
         >
           {Lists.map((items) => (
-            <li>
+            <li className="font-bold">
               <a href={items.link}>{items.name}</a>
             </li>
           ))}
