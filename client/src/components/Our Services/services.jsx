@@ -1,41 +1,44 @@
 import React from "react";
 import ServiceCard from "./serviceCard";
+import { FaPenNib, FaRegPlayCircle, FaCode, FaMicrosoft } from "react-icons/fa";
+import { SiMaterialdesignicons } from "react-icons/si";
+import { DiAndroid } from "react-icons/di";
 
 const ourServices = () => {
   const ServiceList = [
     {
       name: "UI/UX",
-      logo: "LOGO",
+      logo: <FaPenNib />,
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Graphic Design",
-      logo: "LOGO",
+      logo: <SiMaterialdesignicons />,
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Video Editing",
-      logo: "LOGO",
+      logo: <FaRegPlayCircle />,
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Web Dev",
-      logo: "LOGO",
+      logo: <FaCode />,
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "App Dev",
-      logo: "LOGO",
+      logo: <DiAndroid />,
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },
     {
       name: "Software Dev",
-      logo: "LOGO",
+      logo: <FaMicrosoft />,
       content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
     },

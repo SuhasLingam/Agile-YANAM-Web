@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import Logo from "../assets/logo.png";
 
 const navbar = () => {
   const [navStatus, setNavStatus] = useState(false);
@@ -13,12 +14,18 @@ const navbar = () => {
 
   return (
     <div
-      className={`flex font-poppins md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
+      className={`flex fixed bg-white top-0 font-poppins md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
     >
       {/** Logo */}
 
-      <div className="md:font-extrabold font-extrabold ml-4 text-2xl md:ml-11">
-        LOGO
+      <div className="md:font-extrabold md:ml-11 ml-4 text-2xl font-extrabold">
+        <img
+          className="aspect-auto"
+          width={50}
+          height={50}
+          src={Logo}
+          alt="Logo"
+        />
       </div>
 
       {/** Nav Items */}
@@ -52,7 +59,7 @@ const navbar = () => {
 
       {/** Responsive Nav Menu*/}
 
-      <div className="flex justify-center md:hidden items-centers-">
+      <div className="md:hidden items-centers- flex justify-center">
         <button
           className="mr-2"
           onClick={() => {

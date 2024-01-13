@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <Navbar />
-
+        <HomeBanner />
         <OurServices />
       </div>
     </>

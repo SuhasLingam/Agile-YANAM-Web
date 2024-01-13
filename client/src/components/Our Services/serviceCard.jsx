@@ -10,7 +10,9 @@ const serviceCard = ({ name, logo, text }) => {
   };
 
   return (
-    <div className={`flex w-[380px] p-4 rounded-3xl h-[380px] bg-slate-500 `}>
+    <div
+      className={`flex w-[350px] p-4 rounded-3xl h-[350px] bg-[#FFFFFF33] bg-opacity-10`}
+    >
       <div className="flex flex-col justify-between text-white">
         <div
           onMouseEnter={setMouseEnter}
