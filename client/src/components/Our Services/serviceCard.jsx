@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const serviceCard = ({ name, logo, text }) => {
+const serviceCard = ({ name, logo, text, color }) => {
   const [onHover, setOnHover] = useState(false);
   const setMouseEnter = () => {
     setOnHover(true);
@@ -23,8 +23,8 @@ const serviceCard = ({ name, logo, text }) => {
             {logo}
           </p>
         </div>
-        <b className=" flex items-center justify-center text-5xl">{name}</b>
-        <p className="text-justify">{text}</p>
+        <b className="flex items-center justify-center text-5xl">{name}</b>
+        <p className={`text-justify`}>{text}</p>
       </div>
     </div>
   );

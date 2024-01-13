@@ -14,7 +14,7 @@ const navbar = () => {
 
   return (
     <div
-      className={`flex fixed bg-white top-0 font-poppins md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
+      className={`flex fixed z-50 bg-white top-0 font-poppins md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
     >
       {/** Logo */}
 
