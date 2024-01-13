@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const homeBanner = () => {
   return (
-    <div className="font-poppins md:pt-[180px] flex flex-col items-center justify-between w-auto h-screen">
+    <div className="font-mainFont md:pt-[180px] flex flex-col items-center justify-between w-auto h-screen">
       <div className="md:space-y-3 space-y-2 flex flex-col items-center justify-center font-extrabold md:font-bold md:mt-[0px] mt-[200px] ">
         <p className="md:text-5xl flex items-center justify-center text-lg text-justify text-black">
           Crafting Your Digital Destiny with

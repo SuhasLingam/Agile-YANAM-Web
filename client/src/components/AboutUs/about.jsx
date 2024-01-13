@@ -3,7 +3,7 @@ import React from "react";
 const about = () => {
   return (
     <>
-      <div className="font-poppins flex flex-col md:space-y-10 space-y-6 items-center pt-[10%] md:pt-[8%] w-full h-screen">
+      <div className="font-mainFont md:mt-0 mt-[60px] flex flex-col md:space-y-10 space-y-6 items-center pt-[10%] md:pt-[8%] w-full h-screen">
         <b className="md:text-5xl text-3xl font-extrabold">ABOUT US</b>
 
         <p className="md:mx-[18%] mx-[8%] md:pb-11 pb-8 text-justify text-lg md:text-xl">

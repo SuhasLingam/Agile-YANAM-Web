@@ -1,33 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import Logo from "../assets/logo.png";
 
 const navbar = () => {
   const [navStatus, setNavStatus] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const setNavColor = () => {
+      if (window.scrollY >= 1) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", setNavColor);
+  }, []);
 
   const Lists = [
     { name: "HOME", link: "/" },
-    { name: "ABOUT US", link: "/" },
-    { name: "OUR SERVICES", link: "/" },
+    { name: "ABOUT US", link: "/About" },
+    { name: "OUR SERVICES", link: "/Services" },
   ];
 
   return (
     <div
-      className={`flex fixed z-50 bg-white w-full top-0 font-poppins md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
+      className={`flex fixed z-50 ${
+        scroll ? "bg-slate-500 bg-opacity-50 backdrop-blur-[8px]" : "bg-white"
+      } w-full top-0 font-mainFont md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
     >
       {/** Logo */}
 
       <div
         className={`md:font-extrabold  md:ml-11 ml-4 text-2xl font-extrabold`}
       >
-        <img
-          className="aspect-auto"
-          width={50}
-          height={50}
-          src={Logo}
-          alt="Logo"
-        />
+        <img width={50} height={50} src={Logo} alt="Logo" />
       </div>
 
       {/** Nav Items */}
@@ -35,13 +43,15 @@ const navbar = () => {
       <div
         className={`md:flex md:items-center md:visible ${
           navStatus
-            ? "flex flex-col visible space-y-2  items-center justify-center"
+            ? "flex flex-col visible space-y-2 items-center justify-center"
             : "hidden"
         }  md:justify-between`}
       >
         <ul
           className={`md:flex md:gap-11 md:font-medium ${
-            navStatus ? "font-bold text-xl space-y-2" : ""
+            navStatus
+              ? "font-bold text-xl flex flex-col items-center justify-center space-y-2"
+              : ""
           }`}
         >
           {Lists.map((items) => (

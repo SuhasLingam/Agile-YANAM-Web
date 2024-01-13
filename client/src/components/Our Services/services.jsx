@@ -133,8 +133,8 @@ const ourServices = () => {
   ];
 
   return (
-    <div className="w-full h-full font-poppins items-center justify-center flex flex-col bg-[#000000]">
-      <div className="flex my-[40px] md:my-[70px] items-center justify-center text-white">
+    <div className="w-full h-full font-mainFont items-center justify-center flex flex-col bg-[#000000]">
+      <div className="flex mt-[130px] my-[40px] md:mt-[150px] md:my-[70px] items-center justify-center text-white">
         <b className="md:text-5xl text-3xl">OUR SERVICES</b>
       </div>
 
