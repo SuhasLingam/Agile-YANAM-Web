@@ -14,11 +14,13 @@ const navbar = () => {
 
   return (
     <div
-      className={`flex fixed z-50 bg-white top-0 font-poppins md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
+      className={`flex fixed z-50 bg-yellow-300 w-full top-0 font-poppins md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}
     >
       {/** Logo */}
 
-      <div className="md:font-extrabold md:ml-11 ml-4 text-2xl font-extrabold">
+      <div
+        className={`md:font-extrabold  md:ml-11 ml-4 text-2xl font-extrabold`}
+      >
         <img
           className="aspect-auto"
           width={50}
@@ -33,11 +35,15 @@ const navbar = () => {
       <div
         className={`md:flex md:items-center md:visible ${
           navStatus
-            ? "flex flex-col visible items-center justify-center"
+            ? "flex flex-col visible space-y-2  items-center justify-center"
             : "hidden"
         }  md:justify-between`}
       >
-        <ul className={`md:flex md:gap-11 md:font-medium `}>
+        <ul
+          className={`md:flex md:gap-11 md:font-medium ${
+            navStatus ? "font-bold text-xl space-y-2" : ""
+          }`}
+        >
           {Lists.map((items) => (
             <li>
               <a href={items.link}>{items.name}</a>

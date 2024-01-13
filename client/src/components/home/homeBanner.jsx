@@ -3,17 +3,17 @@ import { FaArrowRight } from "react-icons/fa";
 
 const homeBanner = () => {
   return (
-    <div className="font-poppins md:pt-[200px] flex flex-col items-center justify-between w-full h-screen">
-      <div className="space-y-3">
-        <p className="md:text-5xl flex items-center justify-center text-2xl text-justify">
+    <div className="font-poppins md:pt-[180px] flex flex-col items-center justify-between w-full h-screen">
+      <div className="md:space-y-3 space-y-2 font-bold md:mt-[0px] mt-[200px] ">
+        <p className="md:text-5xl flex items-center justify-center text-xl text-justify text-black">
           Crafting Your Digital Destiny with
         </p>
-        <p className="md:text-5xl flex items-center justify-center text-2xl text-justify">
-          Personalized Tech Approaches.
+        <p className="md:text-5xl text-wrap flex items-center justify-center text-xl text-black">
+          Enhancing your ability with customised solutions
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <a className="flex flex-row items-center justify-center p-3 text-white bg-black rounded-full">
+        <a className="md:p-3 md:px-6 flex flex-row items-center justify-center p-2 px-4 text-white bg-black rounded-full">
           Let's Connect <FaArrowRight />
         </a>
       </div>
