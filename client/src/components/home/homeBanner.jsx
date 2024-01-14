@@ -9,7 +9,7 @@ const homeBanner = () => {
           Crafting Your Digital Destiny with
         </p>
         <p className="md:text-5xl flex items-center justify-center text-lg text-justify text-black break-all">
-          Enhancing your ability with customised solutions
+          Enhancing your abilities with our customised solutions
         </p>
       </div>
       <div className="flex items-center justify-center">
