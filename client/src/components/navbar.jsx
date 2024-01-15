@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useSyncExternalStore } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import Logo from "../assets/logo.png";
@@ -57,7 +57,7 @@ const navbar = () => {
           }`}
         >
           {Lists.map((items) => (
-            <li className="font-bold">
+            <li className={`font-bold`}>
               <a href={items.link}>{items.name}</a>
             </li>
           ))}
