@@ -40,7 +40,7 @@ const navbar = () => {
         <img width={50} height={50} src={Logo} alt="Logo" />
       </div>
 
-      {/** Nav Items */}
+     {/** Nav Items */}
 
       <div
         className={`md:flex md:items-center md:visible ${
