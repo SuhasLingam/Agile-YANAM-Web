@@ -5,10 +5,10 @@ const homeBanner = () => {
   return (
     <div className="font-mainFont md:pt-[180px] flex flex-col items-center justify-between w-auto h-screen">
       <div className="md:space-y-3 space-y-2 flex flex-col items-center justify-center font-extrabold md:font-bold md:mt-[0px] mt-[200px] ">
-        <p className="md:text-5xl flex items-center justify-center text-lg text-justify text-black">
+        <p className="md:text-5xl flex items-center justify-center px-4 text-lg text-justify text-black">
           Crafting Your Digital Destiny with
         </p>
-        <p className="md:text-5xl flex items-center justify-center text-lg text-justify text-black break-all">
+        <p className="md:text-5xl flex items-center justify-center px-4 text-lg text-justify text-black break-all">
           Enhancing your abilities with our customised solutions
         </p>
       </div>
