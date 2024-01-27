@@ -40,7 +40,7 @@ const navbar = () => {
         <img width={50} height={50} src={Logo} alt="Logo" />
       </div>
 
-     {/** Nav Items */}
+      {/** Nav Items */}
 
       <div
         className={`md:flex md:items-center md:visible ${
@@ -59,7 +59,7 @@ const navbar = () => {
           {Lists.map((items) => (
             <li>
               <a href={items.link}>
-                <span className="hover:border-b-4 hover:shadow-xl hover:border-yellow-300 hover:transition-all duration-200">
+                <span className="hover:border-b-4 hover:shadow-xl hover:border-yellow-300 hover:transition-all font-semibold duration-200">
                   {items.name}
                 </span>
               </a>
@@ -69,13 +69,14 @@ const navbar = () => {
 
         {/** Contact Us Button */}
         <div>
-          <button
-            className={`text-white md:ml-[340px] md:flex md:visible ${
+          <a
+            href="https://forms.gle/gC14oUFKpQCQS21T7"
+            className={`text-white cursor-pointer md:ml-[340px] md:flex md:visible ${
               navStatus ? "block" : "hidden"
             } text-[20px] md:p-2 p-1 rounded-3xl px-4 md:rounded-3xl md:px-6 md:mr-6 bg-[#000]`}
           >
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
 
