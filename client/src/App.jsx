@@ -9,11 +9,18 @@ function App() {
     <>
       <div>
         <Navbar />
-        <HomeBanner />
-        <OurServices />
-        <AboutUs />
+        <div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<HomeBanner />} />
+    <Route path="/services" element={<OurServices />} />
+    <Route path="/about" element={<AboutUs />} />
+    </Routes>
+    </BrowserRouter>
+
+        </div>
       </div>
-      ;
+      
     </>
   );
 }

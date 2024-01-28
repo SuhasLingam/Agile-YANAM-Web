@@ -59,7 +59,7 @@ const navbar = () => {
           {Lists.map((items) => (
             <li>
               <a href={items.link}>
-                <span className="hover:border-b-4 hover:shadow-xl hover:border-yellow-300 hover:transition-all font-semibold duration-200">
+                <span className="hover:border-b-4 hover:shadow-xl hover:border-blue-300 hover:transition-all duration-200">
                   {items.name}
                 </span>
               </a>
@@ -68,22 +68,22 @@ const navbar = () => {
         </ul>
 
         {/** Contact Us Button */}
-        <div>
-          <a
-            href="https://forms.gle/gC14oUFKpQCQS21T7"
-            className={`text-white cursor-pointer md:ml-[340px] md:flex md:visible ${
+        <div className="md:ml-11">
+          <button
+            className={`text-white  md:flex md:visible ${
               navStatus ? "block" : "hidden"
-            } text-[20px] md:p-2 p-1 rounded-3xl px-4 md:rounded-3xl md:px-6 md:mr-6 bg-[#000]`}
+            } text-[20px] md:p-2 p-1 rounded-3xl  px-4 md:rounded-3xl md:px-6 md:mr-6 bg-[#000]`}
           >
             Contact Us
-          </a>
+          </button>
         </div>
       </div>
 
       {/** Responsive Nav Menu*/}
 
       <div className="md:hidden items-centers- flex justify-center">
-        <button
+        <a
+          href="https://forms.gle/gC14oUFKpQCQS21T7"
           className="mr-2"
           onClick={() => {
             setNavStatus(!navStatus);
@@ -94,7 +94,7 @@ const navbar = () => {
           ) : (
             <HiMenu className="md:hidden text-black" size={40} />
           )}
-        </button>
+        </a>
       </div>
     </div>
   );
