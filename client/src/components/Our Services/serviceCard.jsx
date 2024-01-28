@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import projects from "../Projects/projects";
 
 const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
   const [onHover, setOnHover] = useState(false);
+  const [showProjects, setShowProjects] = useState(false);
+
+  const ProjectsShow = () => {
+    setShowProjects(true);
+  };
 
   const setMouseEnter = () => {
     setOnHover(true);
@@ -46,9 +52,12 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
           >
             {/* Display text on hover */}
             <div className="bottom-[20px] right-[-70px] absolute text-center ">
-              <a className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer">
+              <button
+                onClick={ProjectsShow}
+                className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer"
+              >
                 See Projects <MdOutlineArrowOutward size={20} />
-              </a>
+              </button>
             </div>
           </div>
 

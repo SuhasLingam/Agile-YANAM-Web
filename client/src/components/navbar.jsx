@@ -26,7 +26,7 @@ const navbar = () => {
 
   return (
     <div
-      className={`flex fixed z-50 ${
+      className={`flex font-semibold fixed z-50 ${
         scroll
           ? "bg-white bg-opacity-50 backdrop-blur-[6px] transition-all delay-75 ease-in-out"
           : "bg-white"
@@ -47,7 +47,7 @@ const navbar = () => {
           navStatus
             ? "flex flex-col visible space-y-2 items-center justify-center"
             : "hidden"
-        }  md:justify-between`}
+        }  md:justify-between `}
       >
         <ul
           className={`md:flex md:gap-11 md:font-medium ${
