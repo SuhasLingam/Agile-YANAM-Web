@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import projects from "../Projects/projects";
 
 const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
   const [onHover, setOnHover] = useState(false);
-  const [showProjects, setShowProjects] = useState(false);
-
-  const ProjectsShow = () => {
-    setShowProjects(true);
-  };
 
   const setMouseEnter = () => {
     setOnHover(true);
@@ -52,10 +46,7 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
           >
             {/* Display text on hover */}
             <div className="bottom-[20px] right-[-70px] absolute text-center ">
-              <button
-                onClick={ProjectsShow}
-                className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer"
-              >
+              <button className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer">
                 See Projects <MdOutlineArrowOutward size={20} />
               </button>
             </div>
@@ -67,8 +58,8 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
               onHover
                 ? {
                     transform: "scale(1.3) translate(-50%, -50%)",
-                    width: "450px",
-                    height: "450px",
+                    width: "500px",
+                    height: "500px",
                     opacity: 1,
                     borderRadius: "50%",
                     zIndex: 1,
@@ -100,7 +91,7 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
           style={{
             color: LighterColor,
           }}
-          className={`text-justify`}
+          className={`text-justify text-md`}
         >
           {text}
         </p>

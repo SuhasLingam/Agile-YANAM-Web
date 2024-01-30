@@ -24,7 +24,7 @@ const ourServices = () => {
       DarkerColor: "#FF0000",
       LighterColor: "#FF8E8E",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Elevate your digital presence with our expert UI/UX services! From sleek designs to seamless experiences, we're here to redefine user engagement. Ready to transform your digital journey? Let's craft brilliance together.",
     },
     {
       name: "Graphic Design",
@@ -32,7 +32,7 @@ const ourServices = () => {
       DarkerColor: "#FF008A",
       LighterColor: "#FF8EC4",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Ignite visual brilliance with our Graphic Design services! From striking logos to eye-catching marketing materials, we craft designs that captivate and resonate. Ready to stand out in the visual landscape? Let's create stunning graphics that leave a lasting impression.",
     },
     {
       name: "Video Editing",
@@ -40,7 +40,7 @@ const ourServices = () => {
       DarkerColor: "#FF00F5",
       LighterColor: "#FD8EFF",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Unleash the power of storytelling with our Video Editing services! From captivating visuals to seamless transitions, we transform raw footage into compelling narratives. Ready to make your content stand out? Let's edit greatness into every frame",
     },
     {
       name: "Web Dev",
@@ -48,7 +48,7 @@ const ourServices = () => {
       DarkerColor: "#FF8A00",
       LighterColor: "#FFBD8E",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Empower your online presence with our Web Development expertise! From responsive sites to dynamic web applications, we engineer digital solutions that seamlessly align with your goals. Ready to bring your ideas to life online? Let's code brilliance together",
     },
     {
       name: "App Dev",
@@ -56,7 +56,7 @@ const ourServices = () => {
       DarkerColor: "#FFD600",
       LighterColor: "#FFF48E",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Elevate your digital presence with our App Development expertise! From sleek interfaces to robust functionality, we engineer mobile apps that redefine user experiences. Ready to turn your app vision into reality? Let's innovate together",
     },
     {
       name: "Software Dev",
@@ -64,7 +64,7 @@ const ourServices = () => {
       DarkerColor: "#EBFF00",
       LighterColor: "#EFFF8E",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Embrace efficiency with our Software Development solutions! We create scalable, tailored software that streamlines operations and accelerates growth. Ready to optimize your processes? Let's build powerful software solutions.",
     },
     {
       name: "Blockchain Dev",
@@ -72,7 +72,7 @@ const ourServices = () => {
       DarkerColor: "#CCFF00",
       LighterColor: "#DBFF8E",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Enter the world of decentralized innovation with our Blockchain Development services! From smart contracts to secure networks, we pioneer blockchain solutions that redefine trust. Ready to explore the possibilities of decentralized technology? Let's build the future together.",
     },
     {
       name: "AI Chatbot",
@@ -80,7 +80,7 @@ const ourServices = () => {
       DarkerColor: "#61FF00",
       LighterColor: "#97FF8E",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Transform customer interactions with our AI Chatbots! From personalized conversations to efficient support, our intelligent bots redefine engagement. Ready to enhance your services? Let's chat about the future of AI.",
     },
     {
       name: "Smart Contracts",
@@ -88,7 +88,7 @@ const ourServices = () => {
       DarkerColor: "#00FF94",
       LighterColor: "#8EFFB4",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Enter a new era of secure transactions with our Smart Contracts! From blockchain integration to automated agreements, we streamline processes for efficiency. Ready to elevate your operations? Let's code transparency into your contracts",
     },
     {
       name: "Digital Marketing",
@@ -96,7 +96,7 @@ const ourServices = () => {
       DarkerColor: "#00EAF9",
       LighterColor: "#8EF8FF",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Catapult your brand to new heights with our Digital Marketing expertise! From targeted campaigns to data-driven strategies, we amplify your online presence and boost audience engagement. Ready to conquer the digital landscape? Let's market your success together.",
     },
     {
       name: "Social Media Management",
@@ -104,7 +104,7 @@ const ourServices = () => {
       DarkerColor: "#0075FF",
       LighterColor: "#8EBBFF",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Supercharge your brand's social presence with our Social Media Management services! From engaging content to strategic campaigns, we tailor your online voice for maximum impact. Ready to dominate the social scene? Let's manage your success across platforms.",
     },
     {
       name: "Accounting & Auditing",
@@ -112,7 +112,7 @@ const ourServices = () => {
       DarkerColor: "#8000FF",
       LighterColor: "#9E8EFF",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Elevate financial clarity with our Accounting & Auditing services! From meticulous bookkeeping to comprehensive audits, we ensure precision and compliance. Ready to navigate your financial journey seamlessly? Let's audit and account for your success together",
     },
     {
       name: "Housing & Mapping",
@@ -120,7 +120,7 @@ const ourServices = () => {
       DarkerColor: "#BA00FC",
       LighterColor: "#D48EFF",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Navigate the path to your dream home with our Housing & Mapping solutions! From detailed property maps to streamlined housing searches, we guide you through a seamless real estate journey. Ready to map out your future home? Let's chart a course to your ideal living space.",
     },
     {
       name: "Interior Designing",
@@ -128,8 +128,11 @@ const ourServices = () => {
       DarkerColor: "#FFB800",
       LighterColor: "#FFD88E",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab et,consectetur maiores neque incidunt ea, dolorem quidem dolorum quisquam,dolores nemo cupiditate corporis. Molestiae rerum atque labore voluptateut?",
+        "Transform your space into a masterpiece with our Interior Design expertise! From concept to execution, we craft personalized designs that reflect your style and enhance your living or working environment. Ready to redefine your space? Let's design your world together",
     },
+  ];
+  const ProjectLinks = [
+    { name: "UI/UX", link: "https://www.figma.com/@michaelkamau" },
   ];
 
   return (
@@ -150,11 +153,14 @@ const ourServices = () => {
         ))}
       </div>
       <div className="flex items-center md:mb-[80px] mb-[40px] justify-center text-white">
-        <b className="md:text-5xl md:flex-row flex flex-col text-3xl">
+        <b className="md:text-5xl md:flex-row cursor-auto  flex flex-col text-3xl">
           Looking for something else ?
-          <span className=" md:pl-2 underline-offset-4 flex flex-row items-center justify-center underline cursor-pointer">
+          <a
+            href="https://forms.gle/gC14oUFKpQCQS21T7"
+            className=" md:pl-2 underline-offset-4 flex  flex-row items-center justify-center underline cursor-pointer"
+          >
             Contact Us <MdOutlineArrowOutward />
-          </span>
+          </a>
         </b>
       </div>
     </div>

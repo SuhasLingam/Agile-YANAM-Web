@@ -9,7 +9,7 @@ import Projects from "./components/Projects/projects";
 function App() {
   return (
     <>
-      {/* <div>
+      <div>
         <Navbar />
         <div>
           <BrowserRouter>
@@ -20,8 +20,8 @@ function App() {
             </Routes>
           </BrowserRouter>
         </div>
-      </div> */}
-      <Projects />
+      </div>
+      {/* <Projects /> */}
     </>
   );
 }
