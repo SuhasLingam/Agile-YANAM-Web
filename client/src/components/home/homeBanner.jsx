@@ -12,7 +12,7 @@ const homeBanner = () => {
           Enhancing your abilities with our customised solutions
         </p>
       </div>
-      <div className="flex items-center justify-center md:mt-[10%] mt-[40%]">
+      <div className="flex items-center justify-center md:mt-[10%] mt-[20%]">
         <a
           href="https://forms.gle/gC14oUFKpQCQS21T7"
           className="md:p-3 md:px-6 flex flex-row items-center justify-center p-2 px-4 text-white bg-black rounded-full"
@@ -20,7 +20,7 @@ const homeBanner = () => {
           Let's Connect <FaArrowRight />
         </a>
       </div>
-      <div className="relative w-full h-[60%] ">
+      <div className="relative w-full md:h-[60%]  h-[20%]">
         {" "}
         <svg
           className="absolute bottom-0"
