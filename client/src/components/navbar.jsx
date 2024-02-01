@@ -69,13 +69,14 @@ const navbar = () => {
 
         {/** Contact Us Button */}
         <div className="md:ml-11">
-          <button
+          <a
+            href="https://forms.gle/gC14oUFKpQCQS21T7"
             className={`text-white  md:flex md:visible ${
               navStatus ? "block" : "hidden"
             } text-[20px] md:p-2 p-1 rounded-3xl  px-4 md:rounded-3xl md:px-6 md:mr-6 bg-[#000]`}
           >
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
 
@@ -83,7 +84,6 @@ const navbar = () => {
 
       <div className="md:hidden items-centers- flex justify-center">
         <a
-          href="https://forms.gle/gC14oUFKpQCQS21T7"
           className="mr-2"
           onClick={() => {
             setNavStatus(!navStatus);
