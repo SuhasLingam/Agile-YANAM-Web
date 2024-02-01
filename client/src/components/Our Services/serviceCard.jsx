@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
   const [onHover, setOnHover] = useState(false);
@@ -14,7 +15,7 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
 
   return (
     <div
-      className={`flex w-[350px] border-2 p-5 rounded-3xl h-[350px] bg-[#FFFFFF] bg-opacity-[7%] overflow-hidden relative`}
+      className={`flex w-[350px] h-[350px] md:w-[400px] border-2 p-5 rounded-3xl md:h-[400px] bg-[#FFFFFF] bg-opacity-[7%] overflow-hidden relative`}
     >
       <div className="flex flex-col justify-between text-white">
         <div
@@ -46,8 +47,13 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
           >
             {/* Display text on hover */}
             <div className="bottom-[20px] right-[-70px] absolute text-center ">
-              <button className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer">
-                See Projects <MdOutlineArrowOutward size={20} />
+              <button className="cursor-pointer">
+                <Link
+                  to="/projects"
+                  className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer"
+                >
+                  See Projects <MdOutlineArrowOutward size={20} />
+                </Link>
               </button>
             </div>
           </div>
@@ -91,7 +97,7 @@ const ServiceCard = ({ name, logo, text, DarkerColor, LighterColor }) => {
           style={{
             color: LighterColor,
           }}
-          className={`text-justify text-md`}
+          className={`text-justify`}
         >
           {text}
         </p>

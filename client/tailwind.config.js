@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mainFont: ["Hammersmith One", "sans-serif"],
+        mainFont: ["Nova Square", "sans-serif"],
       },
     },
   },

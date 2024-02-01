@@ -56,8 +56,8 @@ const navbar = () => {
               : ""
           }`}
         >
-          {Lists.map((items) => (
-            <li>
+          {Lists.map((items, index) => (
+            <li key={index}>
               <a href={items.link}>
                 <span className="hover:border-b-4 hover:shadow-xl hover:border-blue-300 hover:transition-all duration-200">
                   {items.name}

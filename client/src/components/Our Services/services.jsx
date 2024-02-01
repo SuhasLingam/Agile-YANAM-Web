@@ -131,9 +131,6 @@ const ourServices = () => {
         "Transform your space into a masterpiece with our Interior Design expertise! From concept to execution, we craft personalized designs that reflect your style and enhance your living or working environment. Ready to redefine your space? Let's design your world together",
     },
   ];
-  const ProjectLinks = [
-    { name: "UI/UX", link: "https://www.figma.com/@michaelkamau" },
-  ];
 
   return (
     <div className="w-full h-full font-mainFont items-center justify-center flex flex-col bg-[#000000]">
@@ -142,13 +139,14 @@ const ourServices = () => {
       </div>
 
       <div className="md:mb-[100px] mb-[80px] grid items-center justify-center grid-flow-row md:grid-cols-3 grid-cols-1 gap-11 md:gap-10">
-        {ServiceList.map((items) => (
+        {ServiceList.map((item, index) => (
           <ServiceCard
-            name={items.name}
-            logo={items.logo}
-            text={items.content}
-            DarkerColor={items.DarkerColor}
-            LighterColor={items.LighterColor}
+            key={index}
+            name={item.name}
+            logo={item.logo}
+            text={item.content}
+            DarkerColor={item.DarkerColor}
+            LighterColor={item.LighterColor}
           />
         ))}
       </div>
