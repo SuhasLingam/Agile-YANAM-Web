@@ -13,7 +13,10 @@ const homeBanner = () => {
         </p>
       </div>
       <div className="flex items-center justify-center md:mt-[10%] mt-[40%]">
-        <a className="md:p-3 md:px-6 flex flex-row items-center justify-center p-2 px-4 text-white bg-black rounded-full">
+        <a
+          href="https://forms.gle/gC14oUFKpQCQS21T7"
+          className="md:p-3 md:px-6 flex flex-row items-center justify-center p-2 px-4 text-white bg-black rounded-full"
+        >
           Let's Connect <FaArrowRight />
         </a>
       </div>
