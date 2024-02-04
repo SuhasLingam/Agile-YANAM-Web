@@ -55,7 +55,7 @@ const ServiceCard = ({
               <button className="cursor-pointer">
                 <Link
                   to="/projects"
-                  className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer">
+                  className="underline-offset-4 decoration-4 flex flex-row items-center justify-center text-2xl text-black underline cursor-pointer font-HeadingFont">
                   See Projects <MdOutlineArrowOutward size={20} />
                 </Link>
               </button>
@@ -94,12 +94,14 @@ const ServiceCard = ({
             {logo}
           </div>
         </div>
-        <b className="flex items-center justify-center py-2 text-5xl">{name}</b>
+        <b className="flex items-center justify-center py-2 text-5xl font-HeadingFont">
+          {name}
+        </b>
         <p
           style={{
             color: LighterColor,
           }}
-          className={`text-justify`}>
+          className={`text-justify font-BodyFont`}>
           {text}
         </p>
       </div>

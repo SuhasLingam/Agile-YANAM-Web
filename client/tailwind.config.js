@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mainFont: ["Nova Square", "sans-serif"],
+        HeadingFont: ["Arvo", "serif"],
+        BodyFont: ["Lato", "sans-serif"],
       },
     },
   },

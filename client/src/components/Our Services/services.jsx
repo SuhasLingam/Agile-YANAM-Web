@@ -132,9 +132,9 @@ const ourServices = ({ setSelectedService }) => {
   ];
 
   return (
-    <div className="w-full h-full font-mainFont items-center justify-center flex flex-col bg-[#000000]">
+    <div className="w-full h-full  items-center justify-center flex flex-col bg-[#000000]">
       <div className="flex mt-[130px] my-[40px] md:mt-[150px] md:my-[70px] items-center justify-center text-white">
-        <b className="md:text-5xl text-3xl">OUR SERVICES</b>
+        <b className="md:text-5xl text-3xl font-HeadingFont">OUR SERVICES</b>
       </div>
 
       <div className="md:mb-[100px] mb-[80px] grid items-center justify-center grid-flow-row md:grid-cols-3 grid-cols-1 gap-11 md:gap-10">
@@ -151,11 +151,11 @@ const ourServices = ({ setSelectedService }) => {
         ))}
       </div>
       <div className="flex items-center md:mb-[80px] mb-[40px] justify-center text-white">
-        <b className="md:text-5xl md:flex-row cursor-auto  flex flex-col text-3xl">
+        <b className="md:text-5xl md:flex-row cursor-auto  flex flex-col text-3xl font-HeadingFont">
           Looking for something else ?
           <a
             href="https://forms.gle/gC14oUFKpQCQS21T7"
-            className=" md:pl-2 underline-offset-4 flex  flex-row items-center justify-center underline cursor-pointer">
+            className=" md:pl-2 underline-offset-4 flex  flex-row items-center justify-center underline cursor-pointer font-HeadingFont">
             Contact Us <MdOutlineArrowOutward />
           </a>
         </b>
