@@ -41,7 +41,7 @@ const ProjectsList = [
   },
   {
     type: 'Graphic Design',
-    title: 'Graphic Design Project Example',
+    title: 'Graphic Design Project ',
     description:
       "Ignite visual brilliance with our Graphic Design services! From striking logos to eye-catching marketing materials, we craft designs that captivate and resonate. Ready to stand out in the visual landscape? Let's create stunning graphics that leave a lasting impression.",
   },
@@ -104,78 +104,78 @@ const ProjectsList = [
 
   {
     type: 'Web Dev',
-    title: 'Web Development Project Example',
+    title: 'Web Development Project ',
     images: web1,
-    redirectLink: ["https://irsbatch2007.in/"],
+    redirectLink: "https://irsbatch2007.in/",
     description:
       "Empower your online presence with our Web Development expertise! From responsive sites to dynamic web applications, we engineer digital solutions that seamlessly align with your goals. Ready to bring your ideas to life online? Let's code brilliance together.",
   },
   {
     type: 'App Dev',
-    title: 'App Development Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Elevate your digital presence with our App Development expertise! From sleek interfaces to robust functionality, we engineer mobile apps that redefine user experiences. Ready to turn your app vision into reality? Let's innovate together.",
-  },
+      "Coming Soon", },
   {
     type: 'Software Dev',
-    title: 'Software Development Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Embrace efficiency with our Software Development solutions! We create scalable, tailored software that streamlines operations and accelerates growth. Ready to optimize your processes? Let's build powerful software solutions.",
-  },
+      "Coming Soon", },
   {
     type: 'Blockchain Dev',
-    title: 'Blockchain Development Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Enter the world of decentralized innovation with our Blockchain Development services! From smart contracts to secure networks, we pioneer blockchain solutions that redefine trust. Ready to explore the possibilities of decentralized technology? Let's build the future together.",
-  },
+      "Coming Soon",  },
   {
     type: 'AI Chatbot',
-    title: 'AI Chatbot Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Transform customer interactions with our AI Chatbots! From personalized conversations to efficient support, our intelligent bots redefine engagement. Ready to enhance your services? Let's chat about the future of AI.",
-  },
+      "Coming Soon",  },
   {
     type: 'Smart Contracts',
-    title: 'Smart Contracts Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Enter a new era of secure transactions with our Smart Contracts! From blockchain integration to automated agreements, we streamline processes for efficiency. Ready to elevate your operations? Let's code transparency into your contracts.",
-  },
+      "Coming Soon",  },
   {
     type: 'Digital Marketing',
-    title: 'Digital Marketing Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Catapult your brand to new heights with our Digital Marketing expertise! From targeted campaigns to data-driven strategies, we amplify your online presence and boost audience engagement. Ready to conquer the digital landscape? Let's market your success together.",
-  },
+      "Coming Soon",  },
   {
     type: 'Social Media Management',
-    title: 'Social Media Management Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Supercharge your brand's social presence with our Social Media Management services! From engaging content to strategic campaigns, we tailor your online voice for maximum impact. Ready to dominate the social scene? Let's manage your success across platforms.",
-  },
+      "Coming Soon", },
   {
     type: 'Accounting & Auditing',
-    title: 'Accounting & Auditing Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Elevate financial clarity with our Accounting & Auditing services! From meticulous bookkeeping to comprehensive audits, we ensure precision and compliance. Ready to navigate your financial journey seamlessly? Let's audit and account for your success together.",
-  },
+      "Coming Soon",},
   {
     type: 'Housing & Mapping',
-    title: 'Housing & Mapping Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Navigate the path to your dream home with our Housing & Mapping solutions! From detailed property maps to streamlined housing searches, we guide you through a seamless real estate journey. Ready to map out your future home? Let's chart a course to your ideal living space.",
-  },
+      "Coming Soon",},
   {
     type: 'Interior Designing',
-    title: 'Interior Designing Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Transform your space into a masterpiece with our Interior Design expertise! From concept to execution, we craft personalized designs that reflect your style and enhance your living or working environment. Ready to redefine your space? Let's design your world together.",
-  },
+      "Coming Soon",  },
   {
     type: 'Graphic Design',
-    title: 'Graphic Design Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Ignite visual brilliance with our Graphic Design services! From striking logos to eye-catching marketing materials, we craft designs that captivate and resonate. Ready to stand out in the visual landscape? Let's create stunning graphics that leave a lasting impression.",
-  },
+      "Coming Soon",},
   {
     type: 'Web Dev',
     title: 'Coming Soon',
@@ -185,64 +185,64 @@ const ProjectsList = [
   },
   {
     type: 'App Dev',
-    title: 'App Development Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Elevate your digital presence with our App Development expertise! From sleek interfaces to robust functionality, we engineer mobile apps that redefine user experiences. Ready to turn your app vision into reality? Let's innovate together.",
-  },
+      "Coming Soon", },
   {
     type: 'Software Dev',
-    title: 'Software Development Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Embrace efficiency with our Software Development solutions! We create scalable, tailored software that streamlines operations and accelerates growth. Ready to optimize your processes? Let's build powerful software solutions.",
-  },
+      "Coming Soon",},
   {
     type: 'Blockchain Dev',
-    title: 'Blockchain Development Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Enter the world of decentralized innovation with our Blockchain Development services! From smart contracts to secure networks, we pioneer blockchain solutions that redefine trust. Ready to explore the possibilities of decentralized technology? Let's build the future together.",
-  },
+      "Coming Soon",},
   {
     type: 'AI Chatbot',
-    title: 'AI Chatbot Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Transform customer interactions with our AI Chatbots! From personalized conversations to efficient support, our intelligent bots redefine engagement. Ready to enhance your services? Let's chat about the future of AI.",
-  },
+      "Coming Soon", },
   {
     type: 'Smart Contracts',
-    title: 'Smart Contracts Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Enter a new era of secure transactions with our Smart Contracts! From blockchain integration to automated agreements, we streamline processes for efficiency. Ready to elevate your operations? Let's code transparency into your contracts.",
-  },
+      "Coming Soon", },
   {
     type: 'Digital Marketing',
-    title: 'Digital Marketing Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Catapult your brand to new heights with our Digital Marketing expertise! From targeted campaigns to data-driven strategies, we amplify your online presence and boost audience engagement. Ready to conquer the digital landscape? Let's market your success together.",
-  },
+      "Coming Soon",},
   {
     type: 'Social Media Management',
-    title: 'Social Media Management Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Supercharge your brand's social presence with our Social Media Management services! From engaging content to strategic campaigns, we tailor your online voice for maximum impact. Ready to dominate the social scene? Let's manage your success across platforms.",
-  },
+      "Coming Soon",},
   {
     type: 'Accounting & Auditing',
-    title: 'Accounting & Auditing Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Elevate financial clarity with our Accounting & Auditing services! From meticulous bookkeeping to comprehensive audits, we ensure precision and compliance. Ready to navigate your financial journey seamlessly? Let's audit and account for your success together.",
-  },
+      "Coming Soon", },
   {
     type: 'Housing & Mapping',
-    title: 'Housing & Mapping Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Navigate the path to your dream home with our Housing & Mapping solutions! From detailed property maps to streamlined housing searches, we guide you through a seamless real estate journey. Ready to map out your future home? Let's chart a course to your ideal living space.",
-  },
+      "Coming Soon", },
   {
     type: 'Interior Designing',
-    title: 'Interior Designing Project Example',
+    itle: 'Coming Soon',
+    images: Cart,
     description:
-      "Transform your space into a masterpiece with our Interior Design expertise! From concept to execution, we craft personalized designs that reflect your style and enhance your living or working environment. Ready to redefine your space? Let's design your world together.",
-  },
+      "Coming Soon",  },
 ];
 
 export default ProjectsList;
