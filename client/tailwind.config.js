@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        HeadingFont: ["Arvo", "serif"],
-        BodyFont: ["Lato", "sans-serif"],
+        HeadingFont: ["Yeseva One", "serif"],
+        BodyFont: ["Josefin Sans", "sans-serif"],
       },
     },
   },
