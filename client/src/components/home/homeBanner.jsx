@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import OurServices from '../Our Services/services';
 import About from '../AboutUs/about';
 
-const homeBanner = () => {
+const homeBanner = ({ setSelectedService }) => {
   return (
     <>
       <div className=" md:pt-[180px] flex flex-col items-center justify-between w-full h-screen">
@@ -35,8 +35,8 @@ const homeBanner = () => {
           </svg>
         </div>
       </div>
-      <OurServices />
       <About />
+      <OurServices setSelectedService={setSelectedService} />
     </>
   );
 };

@@ -1,97 +1,75 @@
-import React, { useEffect, useState } from 'react';
-import { HiMenu } from 'react-icons/hi';
-import { IoClose } from 'react-icons/io5';
+import React, { useState, useEffect } from 'react';
+import { MdMenu } from 'react-icons/md';
 import Logo from '../assets/logo.png';
 
-const navbar = () => {
-  const [navStatus, setNavStatus] = useState(false);
-  const [scroll, setScroll] = useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
-    const setNavColor = () => {
-      if (window.scrollY >= 30) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 0;
+      setIsScrolled(scrolled);
     };
-    window.addEventListener('scroll', setNavColor);
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  const Lists = [
-    { name: 'HOME', link: '/' },
-    { name: 'ABOUT US', link: '/About' },
-    { name: 'OUR SERVICES', link: '/Services' },
-  ];
-
   return (
-    <div
-      className={`flex font-semibold fixed z-50 ${
-        scroll
-          ? 'bg-white bg-opacity-50 backdrop-blur-[6px] transition-all delay-75 ease-in-out'
-          : 'bg-white'
-      } w-full top-0 font-mainFont md:p-3 md:w-full p-4 md:h-max md:text-2xl justify-between items-center`}>
-      {/** Logo */}
-
-      <div
-        className={`md:font-extrabold  md:ml-11 ml-4 text-2xl font-extrabold`}>
-        <img width={50} height={50} src={Logo} alt="Logo" />
+    <nav
+      className={`flex font-HeadingFont items-center justify-between flex-wrap p-6 fixed w-full z-30 top-0 shadow transition-all ${
+        isScrolled ? 'bg-white backdrop-blur-[10px] bg-opacity-65' : 'bg-white'
+      }`}>
+      <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <img src={Logo} alt="logo" className="h-14 w-14" />
       </div>
-
-      {/** Nav Items */}
-
+      <div className="block lg:hidden">
+        <button
+          onClick={toggleNavbar}
+          className={`flex items-center px-3 py-2 border rounded text-black border-gray-400 hover:text-white hover:bg-gray-800`}>
+          <MdMenu className="h-7 w-7 fill-current" />
+        </button>
+      </div>
       <div
-        className={`md:flex md:items-center md:visible ${
-          navStatus
-            ? 'flex flex-col visible space-y-2 items-center justify-center'
-            : 'hidden'
-        }  md:justify-between `}>
-        <ul
-          className={`md:flex md:gap-11 md:font-medium ${
-            navStatus
-              ? 'font-HeadingFont text-xl flex flex-col items-center justify-center space-y-2'
-              : ''
-          }`}>
-          {Lists.map((items, index) => (
-            <li key={index}>
-              <a href={items.link}>
-                <span className="hover:border-b-4 hover:shadow-xl hover:border-blue-300 hover:transition-all duration-200">
-                  {items.name}
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        {/** Contact Us Button */}
-        <div className="md:ml-11">
+        className={`${
+          isOpen ? `block` : `hidden`
+        } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
+        <div className="lg:flex-grow text-3xl md:flex md:items-center md:justify-center md:space-x-11">
           <a
-            href="https://forms.gle/gC14oUFKpQCQS21T7"
-            className={`text-white  md:flex md:visible ${
-              navStatus ? 'block' : 'hidden'
-            } text-[20px] md:p-2 p-1 rounded-3xl  px-4 md:rounded-3xl md:px-6 md:mr-6 bg-[#000]`}>
+            href="/"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            Home
+          </a>
+          <a
+            href="/about"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            About Us
+          </a>
+          <a
+            href="/services"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900">
+            Our Services
+          </a>
+        </div>
+        <div>
+          <a
+            className="block px-4 py-2 bg-black rounded-lg text-white mt-4 lg:inline-block lg:mt-0  hover:text-gray-900  hover:bg-gray-100 focus:outline-none focus:shadow-outline-blue  border border-gray-400 text-lg"
+            href="#">
             Contact Us
           </a>
         </div>
       </div>
-
-      {/** Responsive Nav Menu*/}
-
-      <div className="md:hidden items-centers- flex justify-center">
-        <a
-          className="mr-2"
-          onClick={() => {
-            setNavStatus(!navStatus);
-          }}>
-          {navStatus ? (
-            <IoClose className="md:hidden text-black" size={40} />
-          ) : (
-            <HiMenu className="md:hidden text-black" size={40} />
-          )}
-        </a>
-      </div>
-    </div>
+    </nav>
   );
 };
 
-export default navbar;
+export default Navbar;

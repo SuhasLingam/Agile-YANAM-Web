@@ -27,7 +27,10 @@ function App() {
         <div>
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<HomeBanner />} />
+              <Route
+                path="/"
+                element={<HomeBanner setSelectedService={setSelectedService} />}
+              />
               <Route
                 path="/services"
                 element={
