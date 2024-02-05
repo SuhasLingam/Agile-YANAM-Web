@@ -11,7 +11,7 @@ const homeBanner = ({ setSelectedService }) => {
           <p className="md:text-5xl flex items-center justify-center px-4 text-lg text-justify text-black">
             Crafting Your Digital Destiny with
           </p>
-          <p className="md:text-5xl flex items-center justify-center px-4 text-lg text-justify text-black break-all">
+          <p className="md:text-5xl flex items-center justify-center px-4 text-lg text-justify text-black break-words">
             Enhancing your abilities with our customised solutions
           </p>
         </div>
