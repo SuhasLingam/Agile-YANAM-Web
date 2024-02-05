@@ -2,7 +2,7 @@ import { BsArrowUpRightCircle } from 'react-icons/bs';
 
 const projects = ({ selectedProject, selectedService }) => {
   return (
-    <div className="flex flex-col gap-6 ">
+    <div className="flex flex-col gap-6 mt-[60px]">
       <div className="bg-[#000000]  py-[100px] w-full h-full   flex  flex-col justify-center space-y-12 items-center">
         <p className="md:text-9xl text-6xl text-white font-HeadingFont">
           {selectedService}

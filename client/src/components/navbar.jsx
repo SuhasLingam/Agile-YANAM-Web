@@ -29,7 +29,7 @@ const Navbar = () => {
       className={`flex font-HeadingFont items-center justify-between flex-wrap p-6 fixed w-full z-30 top-0  transition-all ${
         isScrolled
           ? 'bg-white backdrop-blur-[10px] bg-opacity-65'
-          : 'bg-transparent  backdrop-blur-[10px] bg-opacity-65'
+          : 'bg-white  backdrop-blur-[10px]'
       }`}>
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <img src={Logo} alt="logo" className="h-14 w-14" />

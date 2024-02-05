@@ -6,8 +6,8 @@ import About from '../AboutUs/about';
 const homeBanner = ({ setSelectedService }) => {
   return (
     <>
-      <div className=" md:pt-[180px] flex flex-col items-center justify-between w-full h-screen">
-        <div className="font-HeadingFont md:space-y-3 space-y-4 flex flex-col items-center justify-center font-extrabold md:font-bold md:mt-[0px] mt-[150px] ">
+      <div className=" md:pt-[200px] flex flex-col items-center justify-between w-full h-screen">
+        <div className="font-HeadingFont md:space-y-3 space-y-4 flex flex-col items-center justify-center font-extrabold md:font-bold md:mt-[0px] mt-[180px] ">
           <p className="md:text-5xl flex items-center justify-center px-4 text-lg text-justify text-black">
             Crafting Your Digital Destiny with
           </p>
