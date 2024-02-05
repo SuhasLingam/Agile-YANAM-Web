@@ -65,7 +65,7 @@ const Navbar = () => {
         <div>
           <a
             className="block px-4 py-2 bg-black rounded-lg text-white mt-4 lg:inline-block lg:mt-0  hover:text-gray-900  hover:bg-gray-100 focus:outline-none focus:shadow-outline-blue  border border-gray-400 text-lg"
-            href="#">
+            href="https://forms.gle/gC14oUFKpQCQS21T7">
             Contact Us
           </a>
         </div>
