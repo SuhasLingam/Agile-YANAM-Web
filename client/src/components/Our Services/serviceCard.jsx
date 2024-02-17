@@ -94,7 +94,7 @@ const ServiceCard = ({
             {logo}
           </div>
         </div>
-        <b className="flex items-center justify-center py-2 text-5xl font-HeadingFont">
+        <b className="flex items-center justify-center py-2 text-3xl md:text-5xl font-HeadingFont">
           {name}
         </b>
         <p

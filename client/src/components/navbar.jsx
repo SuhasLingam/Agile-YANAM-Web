@@ -31,7 +31,9 @@ const Navbar = () => {
           : 'bg-white  backdrop-blur-[10px]'
       }`}>
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <img src={Logo} alt="logo" className="h-14 w-14" />
+        <a href="/" className="cursor-pointer">
+          <img src={Logo} alt="logo" className="h-14 w-14" />
+        </a>
       </div>
       <div className="block lg:hidden">
         <button
